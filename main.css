@@ -3,3 +3,8 @@
     padding:0px;
     box-sizing: border-box;
 }
+body{
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: top center;
+}
