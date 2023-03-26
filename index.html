@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <header class="row"> 
-            <input type="text" id="" autocomplete="off" class="search-box form-control col" placeholder="Search for a city">
-            <input type="submit" value="Get Your Location" class="get-location btn btn-light col">
+    <div class="container d-flex flex-column align-items-center text-white">
+        <header class="col-7 mb-4 mt-5 d-flex flex-column align-items-center"> 
+            <input type="text" id="" autocomplete="off" class="search-box form-control col mb-2" placeholder="Search for a city">
+            <input type="submit" value="Get Your Location" class="get-location btn btn-light col-6">
         </header>
-        <main class="card container-sm">
-            <section class="location">
+        <main class="card container-sm d-flex flex-column align-items-center col-9 pb-3 pt-3 bg-light bg-gradient bg-opacity-25">
+            <section class="location d-flex flex-column align-items-center">
                 <div class="city h1">Chicago, IL</div>
                 <div class="date h2">Today's Date</div>
             </section>
-            <div class="current">
-                <div class="temp h1">
+            <div class="current d-flex flex-column align-items-center">
+                <div class="temp display-1">
                     15<span>°c</span>
                 </div>
                 <div class="feels-like h5">
                     Feels Like: 15<span>°c</span>
                 </div>
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon">
+                <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="" class="weather-icon text-center img-thumbnail bg-transparent border-0">
                 <div class="weather h3">Rainy</div>
                 <div class="hi-low h3">13°c / 16°c</div>
                 <div class="humidity h3">Humidity: 77%</div>
