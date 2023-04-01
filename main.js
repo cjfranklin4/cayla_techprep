@@ -51,16 +51,24 @@ function getResults(query){
     fetch(`${baseURL}weather?q=${query}&units=metric&appid=${apiKey}`)
         .then(weather => {
             return weather.json();
-        }).catch(err => console.log(err))
-        .then(displayResults);
+        })
+        .then(displayResults)
+        .catch(err => {
+            console.log(err)
+            alert(`The city: "${query}" was not found, please try again.`)
+        });
 }
 
 function getResultsLocation(locLat, locLong){
     fetch(`${baseURL}weather?lat=${locLat}&lon=${locLong}&units=metric&appid=${apiKey}`)
         .then(weather => {
             return weather.json();
-        }).catch(err => console.log(err))
-        .then(displayResults);
+        })
+        .then(displayResults)
+        .catch(err => {
+            console.log(err)
+            alert(`The city was not found, please try again.`)
+        });
 }
 
 //Display OpenWeather API Data functions
